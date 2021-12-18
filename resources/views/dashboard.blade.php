@@ -140,21 +140,33 @@ https://templatemo.com/tm-538-digital-trend
                                     <div class="item project-wrapper" data-aos="fade-up" data-aos-delay="100">
                                         <img src="images/project/project-image01.jpg" class="img-fluid"
                                             alt="project image">
-
                                         <div class="project-info">
                                             <small>{{ $class['time'] }}</small>
-
                                             <h3>
                                                 <div class="row">
                                                     <div class="col-8"><span>{{ $class['title'] }}</span>
                                                     </div>
-                                                    <div class="col-4"><a target="_blank"
+                                                    <div class="col-2"><a target="_blank"
                                                             href={{ $class['link'] }}
                                                             class="btn btn-outline-info">Join
                                                             Now!</a></div>
-                                                </div>
 
+                                                </div><br>
+                                                <form action="/generate-pdf" method="get" class="contact-form"
+                                                    data-aos="fade-up" data-aos-delay="300" role="form">
+                                                    {{ csrf_field() }}
+                                                    <div>
+                                                        <input type="hidden" class="form-control" name="userid"
+                                                            value={{ $userid }} placeholder="Email" required>
+                                                    </div>
 
+                                                    <div>
+                                                        <input type="hidden" class="form-control" name="eventid"
+                                                            value={{ $class['_id'] }} placeholder="Password" required>
+                                                    </div>
+                                                    <button type="submit" class="form-control" id="submit-button"
+                                                        name="btn-input">Generate</button>
+                                                </form>
                                             </h3>
                                         </div>
                                     </div>
@@ -323,7 +335,8 @@ https://templatemo.com/tm-538-digital-trend
                         <div class="col-lg-7 mx-auto col-md-10 col-12">
                             <div class="about-info">
 
-                                <h2 class="mb-4" data-aos="fade-up">E-Learning merupakan suatu<strong> website
+                                <h2 class="mb-4" data-aos="fade-up">E-Learning merupakan suatu<strong>
+                                        website
                                         pembelajaran online</strong>
                                 </h2>
 
@@ -383,7 +396,7 @@ https://templatemo.com/tm-538-digital-trend
                 @else
 
                     <div class="container-fluid" ">
-                        <div class="   row">
+                        <div class="                     row">
 
                         <div
                             class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
