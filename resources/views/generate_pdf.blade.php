@@ -26,8 +26,25 @@
 <body>
     <!-- ABOUT -->
     <div class="container">
-        <center>
-            <div class="col-lg-7 mx-auto col-md-10 col-12">
+        <div class="row">
+
+            <div style="width:800px; height:600px; padding:20px; text-align:center; border: 10px solid #787878">
+                <div style="width:750px; height:550px; padding:20px; text-align:center; border: 5px solid #787878">
+                    <span style="font-size:50px; font-weight:bold">Certificate of Completion</span>
+                    <br><br>
+                    <span style="font-size:25px"><i>This is to certify that</i></span>
+                    <br><br>
+                    <span style="font-size:30px"><b>{{ $user['email'] }}</b></span><br /><br />
+                    <span style="font-size:25px"><i>has participating the course</i></span> <br /><br />
+                    <span style="font-size:30px">{{ $event['title'] }}</span> <br /><br />
+                    <span style="font-size:20px">on <b>Eo-Webinar</b></span>
+                    <br /><br />
+                    <span style="font-size:25px"><i>dated</i></span><br>
+
+                    <span style="font-size:30px">{{ $event['time'] }}</span>
+                </div>
+            </div>
+            {{-- <div class="col-lg-7 mx-auto col-md-10 col-12" style="background-color: aqua">
                 <div class="about-info">
 
                     <h2 class="mb-4" data-aos="fade-up"><strong>Sertifikat Partisipasi</strong>
@@ -39,25 +56,28 @@
                         <strong>{{ $user['email'] }}</strong><br><br>
                     </p>
                     <br><br>
+                    {{-- <div class="about-image" data-aos="fade-up" data-aos-delay="200">
+                        <img src="images/office.png" class="img-fluid" alt="office">
+                    </div> --}}
+        </div>
+    </div>
+    </div>
+    <br><br>
+    <form action="/download-pdf" method="get" class="contact-form" data-aos="fade-up" data-aos-delay="300" role="form"
+        target="_blank">
+        {{ csrf_field() }}
+        <div>
+            <input type="hidden" class="form-control" name="userid" value={{ $user['_id'] }} placeholder="Email"
+                required>
+        </div>
 
-                </div>
-            </div>
-        </center>
-        <br><br>
-        <form action="/download-pdf" method="get" class="contact-form" data-aos="fade-up" data-aos-delay="300"
-            role="form" target="_blank">
-            {{ csrf_field() }}
-            <div>
-                <input type="hidden" class="form-control" name="userid" value={{ $user['_id'] }} placeholder="Email"
-                    required>
-            </div>
-
-            <div>
-                <input type="hidden" class="form-control" name="eventid" value={{ $event['_id'] }}
-                    placeholder="Password" required>
-            </div>
-            <button type="submit" class="form-control" id="submit-button" name="btn-input">Download</button>
-        </form>
+        <div>
+            <input type="hidden" class="form-control" name="eventid" value={{ $event['_id'] }} placeholder="Password"
+                required>
+        </div>
+        <button type="submit" class="form-control" id="submit-button" name="btn-input"
+            style="width: 20%;">Download</button>
+    </form>
     </div>
 
 

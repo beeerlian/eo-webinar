@@ -26,23 +26,22 @@
 <body>
     <!-- ABOUT -->
     <div class="container">
-        <center>
-            <div class="col-lg-7 mx-auto col-md-10 col-12">
-                <div class="about-info">
+        <div style="width:800px; height:600px; padding:20px; text-align:center; border: 10px solid #787878">
+            <div style="width:750px; height:550px; padding:20px; text-align:center; border: 5px solid #787878">
+                <span style="font-size:50px; font-weight:bold">Certificate of Completion</span>
+                <br><br>
+                <span style="font-size:25px"><i>This is to certify that</i></span>
+                <br><br>
+                <span style="font-size:30px"><b>{{ $user['email'] }}</b></span><br /><br />
+                <span style="font-size:25px"><i>has participating the course</i></span> <br /><br />
+                <span style="font-size:30px">{{ $event['title'] }}</span> <br /><br />
+                <span style="font-size:20px">on <b>Eo-Webinar</b></span>
+                <br /><br />
+                <span style="font-size:25px"><i>dated</i></span><br>
 
-                    <h2 class="mb-4" data-aos="fade-up"><strong>Sertifikat Partisipasi</strong>
-                    </h2>
-
-                    <p class="mb-0" data-aos="fade-up">Dalam event webinar dengan tema
-                        <br><strong>{{ $event['title'] }}</strong><br>
-                        Atas nama :<br>
-                        <strong>{{ $user['email'] }}</strong><br><br>
-                    </p>
-                    <br><br>
-
-                </div>
+                <span style="font-size:30px">{{ $event['time'] }}</span>
             </div>
-        </center>
+        </div>
     </div>
 
 

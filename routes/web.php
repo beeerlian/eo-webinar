@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ApiController;
 use App\Http\Controllers\DynamicPdf;
+use App\Mail\EventMail;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,3 +38,4 @@ Route::post('/register-user', [ApiController::class, 'register']);
 Route::post('/add-event', [ApiController::class, 'addEvent']);
 Route::get('/generate-pdf', [ApiController::class, 'generatePdf']);
 Route::get('/download-pdf', [ApiController::class, 'downloadPdf']);
+Route::get('/send-pdf', [ApiController::class, 'sendPdf']);

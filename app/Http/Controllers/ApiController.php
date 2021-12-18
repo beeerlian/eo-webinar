@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\EventMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use GuzzleHttp\Client;
 use GuzzleHttp;
 use PDF;
+use Illuminate\Support\Facades\Mail;
 
 class ApiController extends Controller
 {
@@ -23,7 +25,21 @@ class ApiController extends Controller
             //throw $th;
         }
     }
-
+    function sendPdf(Request $request)
+    {
+        $userId = $request->userid;
+        $eventId = $request->eventid;
+        try {
+            $user = $this->getUserDetailById($userId);
+            $event = $this->getEventDetailById($eventId);
+            $customPaper = array(0, 0, 283.80, 500.00);
+            $pdf = PDF::loadView('certificate', ['user' => $user, 'event' => $event])->setPaper($customPaper, 'landscape');
+            // Mail::to($user['email'])->send(new EventEmail());
+            return $pdf->download('sertificate.pdf');
+        } catch (GuzzleHttp\Exception\BadResponseException $e) {
+            //throw $th;
+        }
+    }
     function downloadPdf(Request $request)
     {
         $userId = $request->userid;
@@ -33,6 +49,14 @@ class ApiController extends Controller
             $event = $this->getEventDetailById($eventId);
             $customPaper = array(0, 0, 283.80, 500.00);
             $pdf = PDF::loadView('certificate', ['user' => $user, 'event' => $event])->setPaper($customPaper, 'landscape');
+            // Mail::to($user['email'])->send(new EventMail($user, $event));
+            Mail::send('certificate', ['user' => $user, 'event' => $event], function ($message) use ($user, $pdf) {
+                $message->from('info@**********');
+                $message->to($user['email']);
+                $message->subject('Thank you message');
+                //Attach PDF doc
+                $message->attachData($pdf->output(), 'cetificate.pdf');
+            });
             return $pdf->download('sertificate.pdf');
         } catch (GuzzleHttp\Exception\BadResponseException $e) {
             //throw $th;
