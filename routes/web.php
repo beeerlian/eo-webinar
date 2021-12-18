@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\ApiController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ApiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,17 +14,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
 });
 
 Route::get('/users', [ApiController::class, 'getUsers']);
 Route::get('/events', [ApiController::class, 'getEvents']);
-Route::get('/login', function () {
+Route::get('/login-email', function () {
     return view('login');
 });
 Route::get('/register', function () {
     return view('register');
 });
+
+Route::get('/create-event-page', [ApiController::class, 'createEventPage']);
+
 Route::post('/login', [ApiController::class, 'login']);
-Route::post('/register', [ApiController::class, 'register']);
+Route::post('/register-user', [ApiController::class, 'register']);
+
+Route::post('/add-event', [ApiController::class, 'addEvent']);
