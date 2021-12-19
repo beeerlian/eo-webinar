@@ -32,7 +32,7 @@
                 <br><br>
                 <span style="font-size:25px"><i>This is to certify that</i></span>
                 <br><br>
-                <span style="font-size:30px"><b>{{ $user['email'] }}</b></span><br /><br />
+                <span style="font-size:30px"><b>{{ $user['data']['email'] }}</b></span><br /><br />
                 <span style="font-size:25px"><i>has participating the course</i></span> <br /><br />
                 <span style="font-size:30px">{{ $event['title'] }}</span> <br /><br />
                 <span style="font-size:20px">on <b>Eo-Webinar</b></span>

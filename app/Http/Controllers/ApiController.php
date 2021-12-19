@@ -52,12 +52,13 @@ class ApiController extends Controller
             // Mail::to($user['email'])->send(new EventMail($user, $event));
             Mail::send('certificate', ['user' => $user, 'event' => $event], function ($message) use ($user, $pdf) {
                 $message->from('info@**********');
-                $message->to($user['email']);
+                $message->to($user['data']['email']);
                 $message->subject('Thank you message');
                 //Attach PDF doc
                 $message->attachData($pdf->output(), 'cetificate.pdf');
             });
-            return $pdf->download('sertificate.pdf');
+            // return $pdf->download('sertificate.pdf');
+            return redirect()->away($event['link']);;
         } catch (GuzzleHttp\Exception\BadResponseException $e) {
             //throw $th;
         }
@@ -87,7 +88,7 @@ class ApiController extends Controller
         $client = new Client();
         $request = $client->get('https://guarded-stream-71687.herokuapp.com/api/users/' . $userId);
         $user = json_decode($request->getBody(), true);
-        return $user['data'];
+        return $user;
     }
 
     public function getEventDetailById($eventid)
@@ -140,7 +141,7 @@ class ApiController extends Controller
     {
         try {
             $client = new Client();
-            $body['nama'] = $request->nama;
+            $body['nama'] = $request->name;
             $body['email'] = $request->email;
             $body['phone'] = $request->phone;
             $body['password'] = $request->password;
