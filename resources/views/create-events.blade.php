@@ -35,7 +35,7 @@ https://templatemo.com/tm-538-digital-trend
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <p class="navbar-brand">
-                E-Learning | Create your class
+                Youbinar | Create your webinar
             </p>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -62,11 +62,11 @@ https://templatemo.com/tm-538-digital-trend
 
                 <div class="col-lg-6 mx-auto col-md-7 col-12 py-5 mt-5 text-center" data-aos="fade-up">
 
-                    <h1 class="mb-4">Buat <strong>kelas Anda</strong> dengan <strong>materi terbaik</strong>
+                    <h1 class="mb-4">Buat <strong>webinar Anda</strong> dengan <strong>materi terbaik</strong>
                         dan menarik</h1>
 
-                    <p>Isi detail kelas anda sesuai dengan data yang tertera dibawah</p>
-                    <p>Jadi bagian dari kami dengan membuat kelas anda sendiri.</p>
+                    <p>Isi detail webinar anda sesuai dengan data yang tertera dibawah</p>
+                    <p>Jadi bagian dari kami dengan membuat webinar anda sendiri.</p>
                 </div>
 
                 <div class="col-lg-8 mx-auto col-md-10 col-12">
