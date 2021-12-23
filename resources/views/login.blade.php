@@ -51,7 +51,7 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <p class="navbar-brand">
-                E-Learning - Sign In
+                Youbinar - Sign In
             </p>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -124,13 +124,13 @@
                 <div class="col-lg-7 mx-auto col-md-10 col-12">
                     <div class="about-info">
 
-                        <h2 class="mb-4" data-aos="fade-up">E-Learning merupakan suatu<strong> website
-                                pembelajaran online</strong>
+                        <h2 class="mb-4" data-aos="fade-up">Youbinar merupakan suatu<strong> website
+                                pembuatan dan pencarian webinar secara online</strong>
                         </h2>
 
-                        <p class="mb-0" data-aos="fade-up">Mempermudah siswa untuk bergabung
-                            <br><br>dengan kelas yang <strong>sesuai jadwal dan materi </strong>yang siswa minati.
-                            Berisi kelas-kelas dari pemateri terbaik, dan tema yang up-to-date dengan perkembangan
+                        <p class="mb-0" data-aos="fade-up">Mempermudah para pemateri untuk membuat webinarnya sendiri serta membantu para pelajar yang ingin melakukan pendaftaran pada webinar yang tersedia
+                            <br><br>dengan waktu yang <strong>sesuai jadwal dan materi </strong>yang pelajar minati.
+                            Berisi pembahasan-pembahasan dari pemateri terbaik, dan tema yang up-to-date dengan perkembangan
                             zaman.
                         </p>
                     </div>
@@ -163,7 +163,7 @@
                     <div class="quote" data-aos="fade-up" data-aos-delay="200"></div>
 
                     <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Aplikasi yang sangat bagus,
-                        sehingga memudahkan antara guru dan siswa untuk berinteraksi melalui metode pembelajaran online.
+                        sehingga memudahkan pemateri-pemateri membuat webinar dan orang-orang mencari webinar yang diinginkan.
                     </h2>
 
                     <p data-aos="fade-up" data-aos-delay="400">
