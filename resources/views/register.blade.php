@@ -54,7 +54,7 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container">
       <p class="navbar-brand" >
-        E-Learning - Sign Up
+        Youbinar - Sign Up
       </p>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,10 +79,10 @@
 
         <div class="col-lg-6 mx-auto col-md-7 col-12 py-5 mt-5 text-center" data-aos="fade-up">
 
-          <h1 class="mb-4">E-Learning yang mudah digunakan <strong>dan akan membantu Anda </strong>mengembangkan  <strong>pembelajaran dan skill</strong>  anda dengan mudah.</h1>
+          <h1 class="mb-4">Aplikasi yang mudah digunakan <strong>dan akan membantu Anda </strong>membuat serta mencari  <strong>webinar-webinar</strong>  yang anda inginkan.</h1>
 
           <p>Penggunaan yang mudah, cepat, dan aman </a></p>
-          <p>melalui kolaborasi online <strong>kapan saja, di mana saja,</strong> dan perangkat apa pun.
+          <p>melalui jaringan online <strong>kapan saja, di mana saja,</strong> dan perangkat apa pun.
           </p>
         </div>
 
