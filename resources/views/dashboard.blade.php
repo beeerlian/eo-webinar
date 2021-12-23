@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>E-Learning</title>
+    <title>YOUBINAR</title>
     <!--
 
 DIGITAL TREND
@@ -72,7 +72,7 @@ https://templatemo.com/tm-538-digital-trend
                                 </h1>
 
                                 <a href="#project" class="custom-btn btn-bg btn mt-3" data-aos="fade-up"
-                                    data-aos-delay="100">Bergabung ke kelas!</a>
+                                    data-aos-delay="100">Bergabung ke youbinar!</a>
 
                                 <strong class="d-block py-3 pl-5 text-white" data-aos="fade-up" data-aos-delay="200"><i
                                         class="fa fa-phone mr-2"></i> +62 888 826 7265</strong>
@@ -100,14 +100,14 @@ https://templatemo.com/tm-538-digital-trend
                         <div class="col-lg-7 mx-auto col-md-10 col-12">
                             <div class="about-info">
 
-                                <h2 class="mb-4" data-aos="fade-up">E-Learning merupakan suatu<strong> website
-                                        pembelajaran online</strong>
+                                <h2 class="mb-4" data-aos="fade-up">Youbinar merupakan suatu<strong> website
+                                        pembuatan dan pencarian webinar online</strong>
                                 </h2>
 
-                                <p class="mb-0" data-aos="fade-up">Mempermudah siswa untuk bergabung
-                                    <br><br>dengan kelas yang <strong>sesuai jadwal dan materi </strong>yang siswa
+                                <p class="mb-0" data-aos="fade-up">Mempermudah pelajar untuk bergabung
+                                    <br><br>dengan webinar yang <strong>sesuai jadwal dan materi </strong>yang pelajar
                                     minati.
-                                    Berisi kelas-kelas dari pemateri terbaik, dan tema yang up-to-date dengan
+                                    Berisi pembahasan-pembahasan dari pemateri terbaik, dan tema yang up-to-date dengan
                                     perkembangan zaman.
                                 </p>
                             </div>
@@ -131,7 +131,7 @@ https://templatemo.com/tm-538-digital-trend
                         <div class="col-lg-12 col-12">
 
                             <h2 class="mb-5 text-center" data-aos="fade-up">
-                                Kelas Tersedia
+                                Webinar Tersedia
                                 <strong>Gabung sekarang</strong>
                             </h2>
 
@@ -186,13 +186,12 @@ https://templatemo.com/tm-538-digital-trend
                         </div>
 
                         <div class="col-lg-6 col-md-7 col-12">
-                            <h4 class="my-5 pt-3" data-aos="fade-up" data-aos-delay="100">Testimoni Siswa</h4>
+                            <h4 class="my-5 pt-3" data-aos="fade-up" data-aos-delay="100">Testimoni Pengguna</h4>
 
                             <div class="quote" data-aos="fade-up" data-aos-delay="200"></div>
 
                             <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Aplikasi yang sangat
-                                bagus, sehingga memudahkan antara guru dan siswa untuk berinteraksi melalui metode
-                                pembelajaran online.</h2>
+                                bagus, sehingga memudahkan orang-orang untuk membuat webinarnya sendiri serta mencari webinar-webinar yang telah tersedia.</h2>
 
                             <p data-aos="fade-up" data-aos-delay="400">
                                 <strong>Naufal Berlian</strong>
@@ -294,12 +293,12 @@ https://templatemo.com/tm-538-digital-trend
                             class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
                             <div class="hero-text">
 
-                                <h1 class="text-white" data-aos="fade-up">Buat kelas terbaikmu!</h1>
+                                <h1 class="text-white" data-aos="fade-up">Buat webinar terbaikmu!</h1>
                                 <form action="/create-event-page" method="get">
                                     <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                     <input type="hidden" name="userid" value={{ $userid }}> <br />
                                     <input class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100"
-                                        type="submit" value=" Jadi bagian dari guru-guru terbaik kami!"
+                                        type="submit" value=" Jadi bagian dari pemateri-pemateri terbaik kami!"
                                         name="btn-input">
                                 </form>
 
@@ -329,15 +328,15 @@ https://templatemo.com/tm-538-digital-trend
                         <div class="col-lg-7 mx-auto col-md-10 col-12">
                             <div class="about-info">
 
-                                <h2 class="mb-4" data-aos="fade-up">E-Learning merupakan suatu<strong>
+                                <h2 class="mb-4" data-aos="fade-up">Youbinar merupakan suatu<strong>
                                         website
-                                        pembelajaran online</strong>
+                                        pembuatan dan pencarian webinar secara online</strong>
                                 </h2>
 
-                                <p class="mb-0" data-aos="fade-up">Mempermudah siswa untuk bergabung
-                                    <br><br>dengan kelas yang <strong>sesuai jadwal dan materi </strong>yang siswa
+                                <p class="mb-0" data-aos="fade-up">Mempermudah orang-orang untuk bergabung
+                                    <br><br>dengan webinar yang <strong>sesuai jadwal dan materi </strong>yang mereka
                                     minati.
-                                    Berisi kelas-kelas dari pemateri terbaik, dan tema yang up-to-date dengan
+                                    Berisi pembahasan-pembahasan dari pemateri terbaik, dan tema yang up-to-date dengan
                                     perkembangan zaman.
                                 </p>
                             </div>
@@ -364,7 +363,7 @@ https://templatemo.com/tm-538-digital-trend
                             <div class="col-lg-12 col-12">
 
                                 <h2 class="mb-5 text-center" data-aos="fade-up">
-                                    <strong>Kelas yang telah Anda buat </strong>
+                                    <strong>Webinar yang telah Anda buat </strong>
                                 </h2>
 
                                 <div class="owl-carousel owl-theme" id="project-slide">
@@ -430,13 +429,12 @@ https://templatemo.com/tm-538-digital-trend
                 </div>
 
                 <div class="col-lg-6 col-md-7 col-12">
-                    <h4 class="my-5 pt-3" data-aos="fade-up" data-aos-delay="100">Testimoni Siswa</h4>
+                    <h4 class="my-5 pt-3" data-aos="fade-up" data-aos-delay="100">Testimoni Pengguna</h4>
 
                     <div class="quote" data-aos="fade-up" data-aos-delay="200"></div>
 
                     <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Aplikasi yang sangat
-                        bagus, sehingga memudahkan antara guru dan siswa untuk berinteraksi melalui metode
-                        pembelajaran online.</h2>
+                        bagus, sehingga memudahkan orang-orang untuk membuat webinarnya sendiri serta mencari webinar-webinar yang telah tersedia.</h2>
 
                     <p data-aos="fade-up" data-aos-delay="400">
                         <strong>Naufal Berlian</strong>
