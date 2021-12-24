@@ -110,12 +110,12 @@
               <div class="col-lg-12 col-12">
                 <center>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="status" id="inlineRadio1" value="peserta" required>
-                    <label class="form-check-label" for="inlineRadio1">Student</label>
+                    <input class="form-check-input" type="radio" name="status" id="inlineRadio1" value="student" required>
+                    <label class="form-check-label" for="inlineRadio1">Peserta</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="status" id="inlineRadio2" value="pemateri">
-                    <label class="form-check-label" for="inlineRadio2">Lecturer</label>
+                    <input class="form-check-input" type="radio" name="status" id="inlineRadio2" value="lecturer">
+                    <label class="form-check-label" for="inlineRadio2">Pemateri</label>
                   </div>
                 </center>
               </div>
