@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>Create Class</title>
+    <title>Create Webinar</title>
     <!--
 
 DIGITAL TREND
@@ -94,7 +94,7 @@ https://templatemo.com/tm-538-digital-trend
 
                             <div class="col-lg-5 mx-auto col-7">
                                 <button type="submit" class="form-control" id="submit-button" name="submit">Create
-                                    Class</button>
+                                    Webinar</button>
                             </div>
                         </div>
 
